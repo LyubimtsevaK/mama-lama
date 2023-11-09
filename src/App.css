@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: 'Vetrino'; 
+	src: url(/fonts/Vetrino.otf); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: 'Bryndan'; 
+	src: url(/fonts/Bryndan.ttf); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    background-image: url('./picture/backHeader.png');
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+    display: block;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: top; */
+    /* min-width: 457px; */
+    /* max-width: 3600px; */
+    /* margin: auto; */
+    /* background-origin: initial; */
+    /* width: 100%; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu {
+    display: flex;
+    margin-left: 340px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttMenu {
+    color: #eae7e7;
+    padding: 0;
+    font-family: "Vetrino";
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    overflow: visible;
+    text-decoration: none;
+    width: auto;
+    margin: 20px 15px;;
+    margin-left: 25px;
+    text-align: center;
+    border: none;
+    background: none;
+    letter-spacing: 0;
+    transition: all 0.6s ease;
+    display: block;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttMenu:after{
+    content:'';
+    height: 1px;
+    background: #eae7e7;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+    opacity: .4;
+    display: block;
+    transition:.5s;
 }
+
+.buttMenu:hover:after{
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 23%; 
+    margin-top: -48px;
+    margin-left: 50px;
+    display: block;
+}
+
+.logoLama {
+    position: absolute;
+    width: 40%; 
+    margin-top: 60px;
+    margin-left: 450px;
+    display: block;
+}
+
+.h1 {
+    font-family: Vetrino;
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 1%;
+    color: #eae7e7;
+    font-size: 180%;
+    display: block;
+}
+
+.h2 {
+    font-family: Vetrino;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 40px;
+    font-size: 30px;
+    color: rgb(116, 42, 186);
+    display: block;
+}
+
+.p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 40px;
+    text-align: center;
+    width: 550px;
+    line-height: 23px;
+    color: rgb(95, 95, 196);
+    display: block;
+}
+
+
+
+
